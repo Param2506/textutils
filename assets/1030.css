@@ -1,0 +1,46 @@
+@keyframes widthani {
+    0% {
+        width: 60px;
+    }
+
+    30% {
+        width: 31%;
+    }
+
+    100% {
+        width: 31%;
+    }
+}
+
+@keyframes blinking {
+
+    0% {
+        border-right: 2px solid black transparent;
+    }
+
+    50% {
+        border-right: 2px solid black;
+    }
+
+    100% {
+        border-right: 2px solid black transparent;
+    }
+}
+
+
+.text2 p{
+    overflow: hidden;
+    font-size: 4vw;
+    animation: widthani 6s ease-in infinite forwards, blinking 2s infinite;
+    white-space: nowrap;
+    font-family: 'Comfortaa', cursive;
+}
+.buttons{
+    margin:auto;
+    height: 102px;
+    width: 53vw;
+}
+#ContactUs {
+    width: 45%;
+
+}

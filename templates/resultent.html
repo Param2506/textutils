@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your resultent text</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <style>
+        body {
+        background-color: grey;
+        color: aquamarine;
+    }
+
+H1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerbtns{
+    width: 60vw;
+    display: flex;
+    justify-content: start;
+
+}
+button {
+    margin: 5px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    background-color: rgb(2, 2, 2);
+    width: 165px;
+    height: 25px;
+}
+
+textarea {
+    width: 60vw;
+    height: 30vh;
+}
+pre{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+
+}
+</style>
+ 
+  <body>
+    <H1>Testing</H1>
+    <h1>Your text after getting analyzed looks like this -- </h1>
+    <pre>{{analyze_text}}</pre>
+    <P>you can see it by your password: {{pass}}</p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with django</title>
+    <style>
+        body {
+            background-color: grey;
+            color: aquamarine;
+        }
+
+        H1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerbtns{
+            width: 60vw;
+            display: flex;
+            justify-content: start;
+
+        }
+        button {
+            margin: 5px;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            background-color: rgb(2, 2, 2);
+            width: 165px;
+            height: 25px;
+        }
+
+        textarea {
+            width: 60vw;
+            height: 30vh;
+        }
+        pre{
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            white-space: pre;
+            margin: 1em 0px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            white-space: pre;
+            margin: 1em 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Testing</H1>
+    <h1>Your text after getting analyzed looks like this -- </h1>
+    <pre>{{analyze_text}}</pre>
+    <P>you can see it by your password: {{pass}}</p>
+    
+
+</body>
+
+</html> {% endcomment %}

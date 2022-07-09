@@ -1,0 +1,508 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Comfortaa', cursive;
+        box-sizing: border-box;
+    }
+
+    /* --black: rgb(29, 29, 32); good black variant */
+    :root {
+        --whiteshadow: white;
+        --blackshadow: black;
+        --black: rgb(29, 29, 32);
+        --bluish: #64b5f6bd;
+        --txtcolor: white;
+        --txtcolorblack: black;
+        --white: white
+            /*#292828*/
+        ;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* dark mode {
+        --black: rgba(205, 201, 201, 0.845);
+        --white: rgb(32, 32, 32);
+    } */
+
+    @keyframes widthani {
+        0% {
+            width: 60px;
+        }
+
+        30% {
+            width: 25%;
+        }
+
+        100% {
+            width: 25%;
+        }
+    }
+
+    @keyframes blinking {
+
+        0% {
+            border-right: 2px solid black transparent;
+        }
+
+        50% {
+            border-right: 2px solid black;
+        }
+
+        100% {
+            border-right: 2px solid black transparent;
+        }
+    }
+
+    body {
+        height: auto;
+        background-color: rebeccapurple;
+    }
+
+    /* navbar styling */
+    .sticky {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+
+    header {
+        position: absolute;
+        top: 9px;
+        left: 15px;
+    }
+
+    .navbar {
+        height: 50px;
+        /* background-color: var(--black); */
+        color: var(--txtcolor);
+        cursor: pointer;
+
+    }
+
+    .navbar::before {
+        content: "";
+        background: var(--black);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        border-radius: 9px;
+        z-index: -1;
+    }
+
+
+    .navbar nav {
+        height: 50px;
+        width: 96vw;
+        display: inline-flex;
+
+    }
+    .imginp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:37%
+    }
+
+    .imginp img {
+        align-self: center;
+        border: 3px solid var(--black);
+        border-radius: 50%;
+        margin-left: 2vw;
+    }
+
+    .imginp input {
+        align-self: center;
+        height: 22px;
+        width: 30vw;
+        padding-left: 5px;
+        margin-left: 8px;
+        border-radius: 9px;
+    }
+
+    .navbar nav ul {
+        width: 63%;
+        display: inline-flex;
+        justify-content: right;
+        align-items: center;
+
+    }
+
+    .navbar nav ul li {
+        font-size: 17px;
+        padding: 0vh 2vw;
+        list-style: none;
+        font-family: 'Lobster', cursive;
+    }
+
+    .navbar nav ul li a {
+        text-decoration: none;
+        color: var(--txtcolor)
+    }
+
+    .navbar nav ul li a:hover {
+        color: grey;
+        text-shadow: 1px 1px 1px var(--whiteshadow);
+    }
+
+    .navbar nav img:hover {
+        width: 41px;
+        height: 41px;
+        border: 2px solid var(--white);
+    }
+
+
+    /* main styling */
+    #main {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .head {
+        margin: auto;
+        border: 2px solid var(--white);
+        border-bottom: 2px solid var(--white);
+        border-right: 2px solid var(--white);
+        box-shadow: -3px -3px 3px var(--blackshadow);
+        padding-right: 14px;
+        /* background-image: linear-gradient(to left, rgb(223, 61, 61), rgb(37, 34, 34)); */
+        border-radius: 7px;
+        height: 350px;
+        width: 99%;
+
+    }
+
+    .head::before {
+        content: "";
+        background: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mw-wz/VGD-WZ-S2-POIS-TOUT.jpg") no-repeat center/cover;
+        position: absolute;
+        top: 0;
+        left: 7px;
+        z-index: -1;
+        width: 99%;
+        height: 350px;
+        border-radius: 8px;
+        opacity: 0.8;
+        filter: blur(6px);
+
+    }
+
+    .additions {
+        height: 122px;
+        width: 80vw;
+    }
+
+    .text1 {
+        margin-left: 10px;
+        height: 60px;
+        width: 85vw;
+        display: inline-flex;
+        align-items: end;
+        justify-content: space-between;
+        color: var(--txtcolor);
+    }
+
+    .text1 p {
+        align-self: flex-start;
+    }
+
+    .buttons {
+        float: right;
+        margin: auto;
+        height: 102px;
+        width: 50vw;
+    }
+
+    .buttons button {
+        text-shadow: 1px 1px var(--blackshadow);
+        font-weight: 900;
+        background: none;
+        color: var(--txtcolor);
+        border: none;
+        padding: 2px;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .buttons button:active {
+        background-color: var(--black);
+        color: var(--txtcolor);
+        border-bottom: 3px solid var(--white);
+        border-right: 3px solid var(--white);
+    }
+
+    .buttons button:hover {
+        cursor: pointer;
+    }
+
+    .text2 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 105px;
+        width: 95vw;
+
+    }
+
+    .text2 p {
+        text-shadow: 2px 2px var(--blackshadow);
+        overflow: hidden;
+        letter-spacing: 0.3rem;
+        color: var(--txtcolor);
+        font-weight: bold;
+        font-size: 5vw;
+        animation: widthani 6s ease-in infinite forwards, blinking 2s infinite;
+        white-space: nowrap;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .text2 img {
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .text1 a img {
+        /* filter:brightness(80%); */
+        border: 2px solid var(--black);
+        filter: contrast(85%);
+        border-radius: 50%;
+    }
+
+    .videoslist {
+        background-color: var(--bluish);
+        border: 2px solid var(--white);
+        border-bottom: 2px solid var(--white);
+        border-right: 2px solid var(--white);
+        box-shadow: -3px -3px 3px var(--blackshadow);
+        border-radius: 7px;
+        /* box-sizing: border-box; */
+        margin: 10px auto;
+        height: auto;
+        width: 99%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    #showhide {
+        height: auto;
+    }
+
+    .videoslist ul .btn {
+        padding: 15px 0px 9px 0px;
+        height: 14vh;
+        width: 30vw;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Videos:active {
+        color: grey;
+        text-shadow: 3px 3px 3px var(--blackshadow);
+        cursor: pointer;
+
+    }
+
+    #Videos {
+        text-shadow: 2px 2px 3px var(--blackshadow);
+        height: 33px;
+        width: 100px;
+        font-size: 30px;
+        background: none;
+        border: none;
+    }
+
+    .videoslist ul li {
+        list-style: none;
+        padding: 15px 0px 9px 0px;
+        height: 200px;
+        width: 76vw;
+    }
+
+    .videoslist ul li p {
+        height: 108px;
+        display: flex;
+        align-items: center;
+        color: var(--txtcolorblack);
+    }
+
+    .videoslist ul li img {
+        margin-right: 15px;
+        height: 110px;
+        width: 185px;
+        float: left;
+    }
+
+    .videoslist ul li img:hover {
+        box-shadow: -2px 2px 5px var(--blackshadow);
+        height: 120px;
+        width: 195px;
+    }
+
+
+    /* footer starting */
+    footer {
+        border: 2px solid var(--white);
+        border-bottom: 2px solid var(--white);
+        border-right: 2px solid var(--white);
+        box-shadow: -3px -3px 3px var(--blackshadow);
+        margin: auto;
+        height: 265px;
+        width: 99%;
+        background-color: var(--black);
+        color: var(--txtcolor);
+        border-radius: 7px;
+
+
+    }
+
+    #ContactUs {
+        height: 210px;
+        width: 32%;
+        margin: auto;
+        padding: 46px 0px
+
+    }
+
+    .footerheading {
+        padding-top: 15px;
+        margin: auto;
+        text-align: center;
+        width: 33vw;
+        letter-spacing: 3px;
+        font-style: italic;
+
+    }
+
+    .table tr th {
+        padding-right: 10vw;
+        font-size: 24px;
+
+    }
+
+    .table tr td a {
+        text-decoration: none;
+        color: var(--txtcolorblack);
+        text-shadow: 2px 2px 1px var(--whiteshadow);
+    }
+
+    .table tr td a:hover {
+        color: aliceblue;
+        text-shadow: 3px 3px 1px grey;
+    }
+
+    .line {
+        text-align: center;
+    }
+
+
+    /* sidebar */
+
+
+
+    .sidebar{
+        border: 3px solid black;
+        background-color: red;
+        height:100vh;
+        width: 25vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* CSS for Members page */
+
+
+
+
+    .form {
+        /* border: 3px solid red; */
+        height: auto;
+        width: 100%;
+    }
+
+    .form form h1 {
+        text-shadow: 1px 1px var(--whiteshadow);
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    .form form {
+        background-color: var(--bluish);
+        margin: 10px auto;
+        border-bottom: 2px solid var(--white);
+        border-right: 2px solid var(--white);
+        box-shadow: -3px -3px 3px var(--blackshadow);
+        border-radius: 10px;
+        width: 97vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .forminp {
+        border: none;
+        background: none;
+        border-bottom: 2px solid var(--black);
+        padding: 15px 5px;
+        width: 30vw;
+    }
+
+    .formlbl {
+        text-align: center;
+        padding-top: 45px;
+    }
+
+    .formlbl:hover {
+        cursor: pointer;
+    }
+
+    .submit {
+        box-shadow: -2px -2px 2px var(--whiteshadow);
+        background: none;
+        margin-top: 100px;
+        margin-bottom: 18px;
+        width: 7vw;
+        height: 29px;
+        background: none;
+        color: var(--txtcolorblack);
+        border: none;
+        padding: 2px;
+        border-bottom: 3px solid var(--black);
+        border-right: 3px solid var(--black);
+    }
+
+    .submit:hover {
+        cursor: pointer;
+    }
+
+    .submit:active {
+        background-color: rgb(0, 0, 0);
+        color: var(--txtcolor);
+        border-bottom: 3px solid var(--white);
+        border-right: 3px solid var(--white);
+    }
+
+    /* body::before{
+        content: "";
+        background: rgb(164, 158, 158);
+        width: 100%;
+        height: 171vh;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        opacity: 0.8;
+        filter:blur(4px)
+    } */

@@ -1,0 +1,90 @@
+body{
+    background-color: red;
+}
+@keyframes widthani {
+    0% {
+        width: 60px;
+    }
+
+    30% {
+        width: 63%;
+    }
+
+    100% {
+        width: 63%;
+    }
+}
+
+@keyframes blinking {
+
+    0% {
+        border-right: 2px solid black transparent;
+    }
+
+    50% {
+        border-right: 2px solid black;
+    }
+
+    100% {
+        border-right: 2px solid black transparent;
+    }
+}
+.navbar{
+    height: 80px;
+}
+.navbar nav {
+    flex-direction: column;
+}
+.imginp{
+    margin-left: 14px;
+    width: 85%;
+}
+.navbar nav ul{
+    width: 95%;
+}
+.imginp input{
+    width: 62vw;
+}
+.text1{
+    width: 93vw;
+}
+.text1 p{
+    font-size: 12px;
+}
+.text2 p{
+    font-size: 8vw;
+}
+.videoslist{
+    width: 99%;
+}
+.videoslist ul .btn {
+    align-items: flex-start;
+}
+.videoslist ul li{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.videoslist ul li p{
+    height: 139px;
+}
+.table tr th{
+    padding-right: 5vw;
+    font-size: 18px;
+}
+.table tr td a{
+    word-break: break-all;
+} 
+footer{
+    height: 288px;
+}
+#ContactUs{
+    width: 88%;
+}
+.forminp {
+    width: 57vw;
+}
+.submit {
+    width: 20vw;
+}
+
